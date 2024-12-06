@@ -1,5 +1,4 @@
-from conf import Symbols
-from threading import Thread
+from .conf import Textures
 
 class map_generator:
     def gen_zero(size):
@@ -9,9 +8,9 @@ class map_generator:
             for x in range(0,size[0]+1):
                 if y == 0 or y == size[1] or \
                     x == 0 or x == size[0]:
-                    row.append(Symbols.wall)
+                    row.append(Textures.wall)
                 else:
-                    row.append(Symbols.zero)
+                    row.append(Textures.air)
             map.append(row)
         return map
 

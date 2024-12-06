@@ -1,5 +1,5 @@
-from project import main
+from project.main import Main
 
-
+Game = Main()
 if __name__ == "__main__":
-    main.start()
+    Game.start()
