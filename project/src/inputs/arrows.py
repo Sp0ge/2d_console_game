@@ -14,3 +14,5 @@ def action_get() -> list:
         
     if keyboard.is_pressed('right'):
         buttons[3] = True
+    
+    return buttons

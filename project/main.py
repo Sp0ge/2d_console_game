@@ -17,7 +17,7 @@ class Main():
     def start(self):
         while self.running:
             size, map = self.MapModule.get_map()
-            self.PlManager.Players_update()
+            self.PlManager.Players_update(map)
             players = self.PlManager.get_players()
             Display.show_all(size, map, players)
             time.sleep(0.005)

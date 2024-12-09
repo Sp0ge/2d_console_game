@@ -17,7 +17,7 @@ class Player():
             random.randint(0 + size[1]//3, size[0] - size[1]//3)
         ]
 
-    def player_action(self, actions):
+    def player_action(self, actions, map):
         self.last_pos = self.pos
         if actions[0]:
             self.pos[0] -= 1 
@@ -27,6 +27,7 @@ class Player():
             self.pos[0] += 1 
         if actions[3]:
             self.pos[1] += 1 
+        
         
         
         
